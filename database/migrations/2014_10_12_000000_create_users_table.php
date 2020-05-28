@@ -22,12 +22,12 @@ class CreateUsersTable extends Migration
             $table->integer("Role");
             $table->string('Email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->timestamp('gemaakt_op');
-            $table->timestamp('veranderd_op');
+            $table->timestamp('gemaakt_op')->nullable()->default(null);
+            $table->timestamp('veranderd_op')->nullable()->default(null);
             $table->rememberToken();
             $table->timestamps();
-            $table->integer('Cursussen_inschrijvenID');
-            $table->foreign('Cursussen_inschrijvenID')->references('Cursussen_inschrijvenID')->on('Cursussen_inschrijven');
+            $table->integer('Cursussen_inschrijvenID')->unsigned();
+//            $table->foreign('Cursussen_inschrijvenID')->references('Cursussen_inschrijvenID')->on('Cursussen_inschrijven');
         });
     }
 
