@@ -21,8 +21,8 @@ class CreatePaginaTable extends Migration
             $table->boolean('hidden');
             $table->string('footer',255);
             $table->string('auteur',255);
-            $table->timestamp('gemaakt_op');
-            $table->timestamp('veranderd_op');
+            $table->timestamp('gemaakt_op')->nullable()->default(null);
+            $table->timestamp('veranderd_op')->nullable()->default(null);
             $table->timestamps();
         });
     }
