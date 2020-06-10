@@ -1,45 +1,86 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
-        <title>@yield('title','Imkers')</title>
-    </head>
-    <body>
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+    <title>Laravel</title>
 
-{{--            <h1 class="logo"><a href="index.html">Kelly</a></h1>--}}
-            <!-- Uncomment below if you prefer to use an image logo -->
-           <a href="index.html" class="logo"><img src="{{ asset('images/logo.png') }}" alt="" class="img-fluid"></a>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('/') }}">About</a></li>
-                    <li><a href="{{ url('/') }}">Resume</a></li>
-                    <li><a href="{{ url('/') }}">Services</a></li>
-                    <li><a href="{{ url('/') }}">Portfolio</a></li>
-                    <li><a href="{{ url('/') }}">Contact</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-
-            <div class="header-social-links">
-                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-            </div>
-
+    <!-- Styles -->
+    <style>
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 200;
+            height: 100vh;
+            margin: 0;
+        }
+        .full-height {
+            height: 100vh;
+        }
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .position-ref {
+            position: relative;
+        }
+        .top-right {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+        .content {
+            text-align: center;
+        }
+        .title {
+            font-size: 84px;
+        }
+        .links > a {
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .m-b-md {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-center position-ref full-height">
+    @if (Route::has('login'))
+        <div class="top-right links">
+            @auth
+                <a href="{{ url('/home') }}">Home</a>
+            @else
+                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ route('register') }}">Register</a>
+            @endauth
         </div>
-    </header><!-- End Header -->
-    </body>
+    @endif
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="content">
+        <div class="title m-b-md">Laravel</div>
+
+        <div class="links">
+            <a href="https://laravel.com/docs">Documentation</a>
+            <a href="https://laracasts.com">Laracasts</a>
+            <a href="https://laravel-news.com">News</a>
+            <a href="https://nova.laravel.com">Nova</a>
+            <a href="https://forge.laravel.com">Forge</a>
+            <a href="https://github.com/laravel/laravel">GitHub</a>
+        </div>
+    </div>
+</div>
+</body>
 </html>
