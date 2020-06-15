@@ -68,22 +68,14 @@
 
                 </blockquote></div>
             <div class="column">
-                <form style="margin-right: 2vw;">
-                    <div class="form-group" >
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="Input Date">Tijd van de activiteit</label>
-                        <input type="date" id="birthday" name="birthday">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form></div>
+
+{{--                {{ Form::open(array('url' => 'foo/bar')) }}--}}
+{{--                echo Form::text('Naam');--}}
+{{--                echo Form::label('email', 'E-Mail Address');--}}
+
+{{--                {{ Form::close() }}--}}
+
+             </div>
         </div>
 
     </div>
