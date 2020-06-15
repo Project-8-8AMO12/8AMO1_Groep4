@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFotoTable extends Migration
+class CreateTextsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateFotoTable extends Migration
      */
     public function up()
     {
-        Schema::create('Foto', function (Blueprint $table) {
-            $table->bigIncrements('FotoID');
-            $table->string('foto_url',255);
-            $table->timestamp('gemaakt_op');
-            $table->timestamp('veranderd_op');
+        Schema::create('texts', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->timestamps();
         });
     }
 
@@ -28,6 +26,6 @@ class CreateFotoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Foto');
+        Schema::dropIfExists('texts');
     }
 }
