@@ -14,7 +14,12 @@
 Route::get('/', 'WelcomeController@index');
 
 Route::get('/activiteiten', 'ActiviteitenController@index');
+
 Route::get('/admin', function () {
     return view('admin');
 });
+
+Route::get('/nieuws', 'NieuwsController@index');
+Route::post('Cursussen', 'ActiviteitenController@index');
+Route::get('/Bijenstal','BijenstalController@index');
 

@@ -1,6 +1,3 @@
-
-<?php
-?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -14,7 +11,6 @@
 <body>
 
 <style>
-
     .column {
     float: left;
     width: 50%;
@@ -51,35 +47,70 @@
         color: #ffd73d;
     }
 
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
 </style>
 
 @include('nav.nav')
 
+<div class="container">
     <div class="content">
         <div class="title m-b-md" style="text-align: center; padding-top: 8vh; color: #9fb23a; ">
             <h1>Activiteiten Pagina</h1>
         </div>
 
-        <div class="row" style="padding-top: 5vh;">
+        <div class="row" style="padding-top: 5vh; padding-bottom: 5vh;">
             <div class="column" style="padding-left: 1vw;"><blockquote>
                     @foreach($text as $texts)
-                            <h1>{{ $texts->Titel }}</h1> <h2>{{ $texts->SubTitel }}</h2> <div>{{ $texts->Tekst }}</div>
+                        <h1 style="color: #9fb23a">{{ $texts->Titel }}</h1> <h2 style="color: #ffd73d">{{ $texts->SubTitel }}</h2> <div>{{ $texts->Tekst }}</div>
                         @endforeach
 
                 </blockquote></div>
             <div class="column">
-
-{{--                {{ Form::open(array('url' => 'foo/bar')) }}--}}
-{{--                echo Form::text('Naam');--}}
-{{--                echo Form::label('email', 'E-Mail Address');--}}
-
-{{--                {{ Form::close() }}--}}
-
+                <div>
+                    <form action="{{url('Cursussen')}}" class="was-validated" method="post">
+                        @csrf
+                        <label for="name">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="Cursus">Cursus</label>
+                        <select id="Cursus" name="Cursus">
+                            <option value="Cursus1">Cursus1</option>
+                            <option value="Cursus2">Cursus2</option>
+                            <option value="Cursus3">Cursus3</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
              </div>
         </div>
 
     </div>
 </div>
+
+@include('nav.footer')
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
