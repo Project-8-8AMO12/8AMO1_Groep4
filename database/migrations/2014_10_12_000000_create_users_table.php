@@ -26,8 +26,6 @@ class CreateUsersTable extends Migration
             $table->timestamp('veranderd_op')->nullable()->default(null);
             $table->rememberToken();
             $table->timestamps();
-            $table->integer('Cursussen_inschrijvenID')->unsigned();
-//            $table->foreign('Cursussen_inschrijvenID')->references('Cursussen_inschrijvenID')->on('Cursussen_inschrijven');
         });
     }
 

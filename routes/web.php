@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index');
+
+Route::get('/activiteiten', 'ActiviteitenController@index');
 
 Route::get('/admin', function () {
     return view('admin');
@@ -22,4 +22,7 @@ Route::get('/admin', function () {
 
 Route::get('contact', 'ContactFormController@create')->name('contact.create');
 Route::post('contact', 'ContactFormController@store')->name('contact.store');
+Route::get('/nieuws', 'NieuwsController@index');
+Route::post('Cursussen', 'ActiviteitenController@index');
+Route::get('/Bijenstal','BijenstalController@index');
 
