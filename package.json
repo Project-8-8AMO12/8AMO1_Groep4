@@ -23,5 +23,13 @@
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "animate": "^1.0.0",
+        "animate.css": "^4.1.0",
+        "animsition": "^4.0.2",
+        "font-awesome": "^4.7.0",
+        "hamburgers": "^1.1.3",
+        "select2": "^4.0.13"
     }
 }
