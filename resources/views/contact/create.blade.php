@@ -81,7 +81,7 @@
                         <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
                     </div>
                     <button class="btn btn-default" type="submit" name="button">
-                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
+                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Voltooien
                     </button>
                 </form>
             </div>
