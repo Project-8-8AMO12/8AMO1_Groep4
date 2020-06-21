@@ -19,3 +19,7 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
+
+Route::get('contact', 'ContactFormController@create')->name('contact.create');
+Route::post('contact', 'ContactFormController@store')->name('contact.store');
+

@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfce15ea-b675-4a74-80a7-81f9b6e788ff" name="Default Changelist" comment="" />
+    <list default="true" id="dfce15ea-b675-4a74-80a7-81f9b6e788ff" name="Default Changelist" comment="Bootstrap toegevoegd">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactFormController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_17_104311_contact_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ContactSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/footer/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/8AMO1_Groep4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/8AMO1_Groep4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,14 +151,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\project\8AMO1_Groep4\public" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\xampp2 installatie\htdocs\repo\8AMO1_Groep4\app\Http\Controllers" />
+      <recent name="C:\xampp\xampp2 installatie\htdocs\repo\8AMO1_Groep4\resources\views" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\xampp2 installatie\htdocs\repo\8AMO1_Groep4\resources\views\footer" />
+      <recent name="C:\xampp\xampp2 installatie\htdocs\repo\8AMO1_Groep4\resources\views\contact" />
+      <recent name="C:\xampp\xampp2 installatie\htdocs\repo\8AMO1_Groep4\resources\views" />
+      <recent name="C:\xampp\xampp2 installatie\htdocs\repo\8AMO1_Groep4\resources\views\nav" />
+      <recent name="C:\xampp\xampp2 installatie\htdocs\repo\8AMO1_Groep4" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -158,6 +199,14 @@
       <workItem from="1590651675347" duration="1616000" />
       <workItem from="1590653640340" duration="3428000" />
       <workItem from="1591600221733" duration="5300000" />
+      <workItem from="1592207312891" duration="671000" />
+      <workItem from="1592208099193" duration="677000" />
+      <workItem from="1592208801063" duration="578000" />
+      <workItem from="1592209403032" duration="492000" />
+      <workItem from="1592209915562" duration="1881000" />
+      <workItem from="1592304464666" duration="2198000" />
+      <workItem from="1592384361250" duration="6745000" />
+      <workItem from="1592472162505" duration="3818000" />
     </task>
     <task id="LOCAL-00001" summary="Bootstrap toegevoegd">
       <created>1590653829851</created>
@@ -177,7 +226,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
