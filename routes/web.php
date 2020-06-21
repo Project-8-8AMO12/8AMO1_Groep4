@@ -23,3 +23,6 @@ Route::get('/nieuws', 'NieuwsController@index');
 Route::post('Cursussen', 'ActiviteitenController@index');
 Route::get('/Bijenstal','BijenstalController@index');
 
+Route::get('contact', 'ContactFormController@create')->name('contact.create');
+Route::post('contact', 'ContactFormController@store')->name('contact.store');
+
