@@ -19,6 +19,7 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
+<<<<<<< HEAD
 
 Route::get('contact', 'ContactFormController@create')->name('contact.create');
 Route::post('contact', 'ContactFormController@store')->name('contact.store');
@@ -26,3 +27,5 @@ Route::get('/nieuws', 'NieuwsController@index');
 Route::post('Cursussen', 'ActiviteitenController@index');
 Route::get('/Bijenstal','BijenstalController@index');
 
+=======
+>>>>>>> parent of 69937c1... Contact pagina Nick
