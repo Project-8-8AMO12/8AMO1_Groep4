@@ -21,6 +21,8 @@ Route::get('/home', 'HomeController@index');
 Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 Route::get('/users/forgotpassword', 'Auth\LoginController@userLogout')->name('user.forgot');
 
+Route::get('contact', 'ContactFormController@create')->name('contact.create');
+Route::post('contact', 'ContactFormController@store')->name('contact.store');
 Route::get('/nieuws', 'NieuwsController@index');
 Route::post('Cursussen', 'ActiviteitenController@index');
 Route::get('/Bijenstal','BijenstalController@index');
@@ -37,4 +39,3 @@ Route::prefix('admin')->group(function() {
     Route::post('/password/reset', 'Auth\AdminResetPasswordController@reset');
     Route::get('/password/reset/{token}', 'Auth\AdminResetPasswordController@showResetForm')->name('admin.password.reset');
 });
-
