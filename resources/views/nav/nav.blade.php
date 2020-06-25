@@ -1,17 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@yield('title')</title>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="{{ request()->url() }}">
+    <meta property="og:title" content="@yield('title')">
+    <meta property="og:image" content="@yield('image')">
+    <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet" type="text/css">
+    <script src="{{asset(mix('js/app.js')) }}"></script>
+</head>
+<div id="app">
 <div class="container-fluid px-md-5  pt-4 pt-md-5">
     <div class="row justify-content-between">
         <div class="col-md-8 order-md-last">
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <a class="navbar-brand" href="index.html"><img src='{{asset('images/logo.png')}}' alt=""></a>
+                    <a class="navbar-brand" href="#"><img src='{{asset('images/logo.png')}}' alt=""></a>
                 </div>
                 <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-                    <form action="#" class="searchform order-lg-last">
-                        <div class="form-group d-flex">
-                            <input type="text" class="form-control pl-3" placeholder="Search">
-                            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+                    @if (Route::has('login'))
+                        <div class="top-right links">
+                            @if (Auth::check())
+                                <a href="{{ url('/home') }}">Home</a>
+                                <a href="{{ url('/users/logout') }}">Logout</a>
+                            @else
+                                <a href="{{ url('/login') }}">Login</a>
+                                <a href="{{ url('/register') }}">Register</a>
+                            @endif
                         </div>
-                    </form>
+                    @endif
                 </div>
             </div>
         </div>
@@ -46,3 +66,7 @@
         </div>
     </div>
 </nav>
+    @yield('content')
+    @include('nav.footer')
+</div>
+
