@@ -11,10 +11,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-fontawesome-webfont.woff2
-fontawesome-webfont.woff
-fontawesome-webfont.ttf
-fontawesome-webfont.eot
 app.js
 app.css
 admin.css.map
@@ -23,3 +19,5 @@ workspace.xml
 mix-manifest.json
 
 public/fonts/vendor/font-awesome/fontawesome-webfont.svg
+public/css
+public/js
