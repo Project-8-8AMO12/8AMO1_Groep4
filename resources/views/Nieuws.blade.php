@@ -71,7 +71,7 @@
         </blockquote></div>
     <div class="column">
 
-        <img src="{{asset('images/IMG-20190509-WA0020.jpg')}}" height='350px'>
+        <img class="img-fluid" style="max-width: 100%;" src="{{asset('images/IMG-20190509-WA0020.jpg')}}" height='350px'>
 
     </div>
 
