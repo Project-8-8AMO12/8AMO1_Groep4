@@ -7,13 +7,16 @@ use Illuminate\Support\Facades\DB;
 
 class Bijenstalcontroller extends Controller
 {
-        public function index() {
-            $pageID = 4;
+
+    public  function index() {
+
+        $pageID =4;
 
 
-            $text = DB::table('pagina')->select('Titel','SubTitel','Tekst','Footer')->where('pageID',$pageID)->get();
 
-            return view('Bijenstal',['text'=>$text]);
+        $text = DB::table('pagina')->select('Titel','SubTitel','Tekst','Footer')->where('pageID',$pageID)->get();
 
-        }
+        return view('Bijenstal',['text'=>$text]);
+
+    }
 }
