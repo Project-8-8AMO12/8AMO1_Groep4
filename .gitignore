@@ -11,3 +11,13 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+app.js
+app.css
+admin.css.map
+admin.css
+workspace.xml
+mix-manifest.json
+
+public/fonts/vendor/font-awesome/fontawesome-webfont.svg
+public/css
+public/js
