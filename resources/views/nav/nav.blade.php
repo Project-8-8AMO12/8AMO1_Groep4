@@ -67,6 +67,5 @@
     </div>
 </nav>
     @yield('content')
-    @include('nav.footer')
 </div>
 

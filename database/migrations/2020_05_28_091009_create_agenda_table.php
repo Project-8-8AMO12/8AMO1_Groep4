@@ -19,8 +19,8 @@ class CreateAgendaTable extends Migration
             $table->string('gebeurtenis',255);
             $table->date('datum');
             $table->time('time');
-            $table->timestamp('gemaakt_op');
-            $table->timestamp('veranderd_op');
+            $table->timestamp('gemaakt_op')->nullable()->default(null);
+            $table->timestamp('veranderd_op')->nullable()->default(null);
         });
     }
 

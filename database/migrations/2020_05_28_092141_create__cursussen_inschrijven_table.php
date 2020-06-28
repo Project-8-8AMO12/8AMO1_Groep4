@@ -15,8 +15,8 @@ class CreateCursussenInschrijvenTable extends Migration
     {
         Schema::create('Cursussen_inschrijven', function (Blueprint $table) {
             $table->bigIncrements('Cursussen_inschrijvenID');
-            $table->timestamp('gemaakt_op');
-            $table->timestamp('veranderd_op');
+            $table->timestamp('gemaakt_op')->nullable()->default(null);
+            $table->timestamp('veranderd_op')->nullable()->default(null);
             $table->timestamps();
         });
     }
