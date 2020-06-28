@@ -7,7 +7,7 @@
 @section('content')
     <div class="container">
         <br/>
-        <form method="post" action="{{url('event/add')}}">
+        <form method="post" action="{{url('admin/event/add')}}">
             @csrf
             <div class="row">
                 <div class="col-md-4"></div>
@@ -19,21 +19,21 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
-                    <strong> Start Date : </strong>
+                    <strong> Begin Datum : </strong>
                     <input class="date form-control"  type="text" id="startdate" name="startdate">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
-                    <strong> End Date : </strong>
+                    <strong> Eind Datum : </strong>
                     <input class="date form-control"  type="text" id="enddate" name="enddate">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="form-group col-md-4">
-                    <button type="submit" class="btn btn-success">Add Event</button>
+                    <button type="submit" class="btn btn-success">BezigHeid toevoegen</button>
                 </div>
             </div>
         </form>

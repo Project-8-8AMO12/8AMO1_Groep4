@@ -32,7 +32,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 Route::get('/users/forgotpassword', 'Auth\LoginController@userLogout')->name('user.forgot');
-Route::get('event','EventController@calendar');
+Route::get('calendar','EventController@calendar');
 
 Route::prefix('admin')->group(function() {
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
