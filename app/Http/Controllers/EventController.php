@@ -20,7 +20,7 @@ class EventController extends Controller {
         $event->start_date=$request->get('startdate');
         $event->end_date=$request->get('enddate');
         $event->save();
-        return redirect('event')->with('success', 'Event has been added');
+        return redirect('calendar')->with('success', 'Event has been added');
     }
 
     public function calendar() {
