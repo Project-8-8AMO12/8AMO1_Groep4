@@ -19,5 +19,13 @@ workspace.xml
 mix-manifest.json
 
 public/fonts/vendor/font-awesome/fontawesome-webfont.svg
-public/css
-public/js
+*.iml
+.idea/8AMO1_Groep4.iml
+.idea/8AMO1_Groep4.iml
+*.iml
+*.xml
+*.json
+*.eot
+*.ttf
+*.woff
+*.woff2

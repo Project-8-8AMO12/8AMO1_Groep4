@@ -4,7 +4,7 @@
     <div class="card bg-light">
         <article class="card-body mx-auto" style="max-width: 400px;">
             <h4 class="card-title mt-3 text-center">Login</h4>
-            <form class="form-box" role="form" method="POST" action="{{ route('login') }}">
+            <form class="form-box" role="form" method="POST" action="{{ route('admin.login') }}">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <input id="email" type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}" required autofocus>

@@ -18,8 +18,8 @@ class CreateStertselaarTable extends Migration
             $table->string('Naam',255);
             $table->date('Datum');
             $table->string('stertselaar_url',255);
-            $table->timestamp('gemaakt_op');
-            $table->timestamp('veranderd_op');
+            $table->timestamp('gemaakt_op')->nullable()->default(null);
+            $table->timestamp('veranderd_op')->nullable()->default(null);
             $table->timestamps();
         });
     }

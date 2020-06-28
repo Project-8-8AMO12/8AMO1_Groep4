@@ -19,10 +19,10 @@ class CreateCursusTable extends Migration
             $table->string('Beschrijving');
             $table->date('Datum');
             $table->string('Locatie',255);
-            $table->timestamp('Begintijd');
-            $table->timestamp('Eindtijd');
-            $table->timestamp('gemaakt_op');
-            $table->timestamp('veranderd_op');
+            $table->timestamp('Begintijd')->nullable()->default(null);;
+            $table->timestamp('Eindtijd')->nullable()->default(null);;
+            $table->timestamp('gemaakt_op')->nullable()->default(null);
+            $table->timestamp('veranderd_op')->nullable()->default(null);
             $table->timestamps();
         });
     }
