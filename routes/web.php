@@ -17,15 +17,16 @@ Route::get('/', 'WelcomeController@index');
 Route::get('/activiteiten', 'ActiviteitenController@index');
 
 
-Route::get('contact', 'ContactFormController@create')->name('contact.create');
-Route::post('contact', 'ContactFormController@store')->name('contact.store');
+Route::get('/contact', 'ContactController@getContact');
+Route::post('/contact', 'ContactController@saveContact');
+
+
 
 Route::get('/nieuws', 'NieuwsController@index');
 Route::post('Cursussen', 'ActiviteitenController@index');
 Route::get('/Bijenstal','BijenstalController@index');
 
-Route::get('contact', 'ContactFormController@create')->name('contact.create');
-Route::post('contact', 'ContactFormController@store')->name('contact.store');
+
 
 Auth::routes();
 
