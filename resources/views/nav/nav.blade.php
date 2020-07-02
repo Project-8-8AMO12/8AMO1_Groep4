@@ -54,10 +54,10 @@
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav m-auto">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
+                <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="{{ url('/nieuws') }}" class="nav-link">Nieuws</a></li>
+                <li class="nav-item"><a href="{{ url('/activiteiten') }}" class="nav-link">Activiteiten</a></li>
+                <li class="nav-item"><a href="{{ url('/Bijenstal') }}" class="nav-link">Bijenstal</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Test</a></li>
@@ -67,6 +67,5 @@
     </div>
 </nav>
     @yield('content')
-    @include('nav.footer')
 </div>
 
